@@ -88,6 +88,11 @@
                 <Button Text="Avançar"
                         BackgroundColor="#82777A"/>
 
+                <Button Text="Sobre o aplicativo"
+                        Clicked="Button_Sobre_Clicked"
+                        BackgroundColor="#82777A"
+                        Margin="0,10,0,0"/>
+
 
             </VerticalStackLayout>
         </Frame>
