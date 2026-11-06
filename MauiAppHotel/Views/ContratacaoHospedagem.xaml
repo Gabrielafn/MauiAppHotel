@@ -57,7 +57,9 @@
                 <Picker x:Name="pck_quarto"
                         Title="Selecione sua Acomodação" 
                         TextColor="#8B5360"
-                        BackgroundColor="#82777A"/>
+                        BackgroundColor="#82777A"
+                        ItemDisplayBinding="{Binding Descricao}"/>
+                   
 
                 <Frame Padding="10"
                        Margin="10"
@@ -69,6 +71,7 @@
                             <Label Text="Check-in:" 
                                    TextColor="#8B5360"/>
                             <DatePicker x:Name="dtpck_check_in"
+                                        DateSelected="dtpck_check_in_DateSelected"
                                         Format="dd/mm/yyyy" 
                                         BackgroundColor="#82777A"/>
                           </HorizontalStackLayout>
@@ -86,8 +89,9 @@
                 </Frame>
 
                 <Button Text="Avançar"
-                        BackgroundColor="#82777A"/>
-
+                        BackgroundColor="#82777A"
+                        Clicked="OnAvancarClicked"/>
+                
                 <Button Text="Sobre o aplicativo"
                         Clicked="Button_Sobre_Clicked"
                         BackgroundColor="#82777A"
